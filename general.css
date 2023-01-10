@@ -1,0 +1,139 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font sizes (rem)
+1 / 1.2 / 1.4 / 1.6 / 1.8 / 2.0 / 2.4 / 3.0 / 3.6 / 4.4 / 5.2 / 6.2 / 7.4 / 8.6 / 9.8
+
+- Font weights
+
+- Line heights
+
+- Letter spacing
+
+--- 02 COLORS
+
+- Primary: #396175
+- Tints: #518fb5
+- Shades: #1E2E36
+- Accents:
+- Greys
+
+#333
+#555
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Spacing system (rem)
+0.2 / 0.4 / 0.8 / 1.2 / 1.6 / 2.4 / 3.2 / 4.8 / 6.4 / 8.0 / 9.6 / 12.8
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #333;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+}
+
+/**************************/
+/* REUSABLE CONTAINER */
+/**************************/
+
+.container {
+  max-width: 140rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/**************************/
+/* REUSABLE HEADINGS */
+/**************************/
+
+.primary-heading {
+  color: #396175;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.secondary-heading,
+.primary-heaading {
+  color: #396175;
+  margin-bottom: 0.6rem;
+}
+
+.secondary-heading {
+  font-size: 3.2rem;
+}
+
+.tertiary-heading {
+  font-size: 1.6rem;
+  color: #396175;
+}
+
+/**************************/
+/* REUSABLE CLASSES */
+/**************************/
+
+.content-img {
+  width: 40rem;
+  text-align: center;
+}
+
+.padding {
+  padding: 1.8rem 3.2rem 1.8rem 3.2rem;
+}
+
+.grid-list {
+  display: grid;
+  grid-template-columns: 3.6rem 1fr;
+}
+
+/**************************/
+/* REUSABLE FLEX */
+/**************************/
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 0.8rem;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.gap-48 {
+  gap: 4.8rem;
+}
+
+.gap-56 {
+  gap: 5.6rem;
+}
+
+.center {
+  text-align: center;
+}

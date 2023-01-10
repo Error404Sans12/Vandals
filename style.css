@@ -1,0 +1,534 @@
+/******************************/
+/* NAVIGATION SECTION */
+/******************************/
+
+.header {
+  z-index: 11111;
+  width: 100%;
+  background-color: transparent;
+}
+
+.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.2rem 4.8rem;
+}
+
+.nav-list {
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  color: #396175;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #518fb5;
+}
+
+.home-link:link,
+.home-link:visited {
+  text-decoration: none;
+  color: #396175;
+}
+
+/******************************/
+/* DROPDOWN SECTION*/
+/******************************/
+
+.drop-link:link,
+.drop-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: all 0.3s;
+  padding: 1.6rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.drop-link:hover,
+.drop-link:active {
+  background-color: #eee;
+  color: #518fb5;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 5rem;
+  top: 6rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.drop-list {
+  list-style-type: none;
+  background-color: #fff;
+  width: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover .dropdown-menu {
+  opacity: 1;
+  top: 4.4rem;
+  pointer-events: all;
+  color: #518fb5;
+}
+
+/******************************/
+/* MAIN SECTION*/
+/******************************/
+
+.streaming {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.definition,
+.types,
+.platforms,
+.analysis,
+.needs,
+.characteristics {
+  padding-bottom: 1.2rem;
+}
+
+.grid-icon {
+  color: #518fb5;
+  margin-top: 0.4rem;
+}
+
+.icon {
+  color: #518fb5;
+}
+
+/******************************/
+/* LIST SECTION */
+/******************************/
+
+.types-list,
+.platform-list,
+.needs-list {
+  list-style-type: none;
+  margin-left: 2.4rem;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.analysis-list,
+.charact--list {
+  list-style-type: none;
+}
+
+.charact--list {
+  font-size: 1.8rem;
+  margin-left: 4.4rem;
+  list-style-type: disc;
+}
+
+.analysis-list {
+  line-height: 2;
+}
+
+.analysis-list,
+.needs-list {
+  font-size: 1.8rem;
+  margin-left: 2.4rem;
+  list-style-type: none;
+}
+
+.list {
+  padding-bottom: 1.4rem;
+}
+
+.flex-list {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/******************************/
+/* HERO SECTION */
+/******************************/
+
+.hero-section {
+  height: 93.7vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('img/Streaming.jpeg');
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-heading {
+  z-index: 1;
+  font-size: 12.6rem;
+  text-align: center;
+  color: #fff;
+}
+
+/******************************/
+/* DATA SECTION */
+/******************************/
+
+.section-data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  row-gap: 3.2rem;
+
+  margin-top: 4.8rem;
+  margin-bottom: 5.6rem;
+}
+
+.type-box,
+.platform-box,
+.analysis-box {
+  width: 40rem;
+  height: 70rem;
+  border-radius: 9px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.4s;
+  /* border: 1px solid #000; */
+}
+
+.type-box:hover,
+.platform-box:hover,
+.analysis-box:hover {
+  transform: translateY(-1.2rem);
+}
+
+/******************************/
+/* TEAM SECTION */
+/******************************/
+
+.team-section {
+  height: 50vh;
+}
+
+.team-heading {
+  font-size: 5.6rem;
+  color: #518fb5;
+  text-align: center;
+}
+
+.img-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 5.6rem;
+
+  overflow: hidden;
+  margin-top: 9.6rem;
+}
+
+.joshua,
+.jillian,
+.joel,
+.quinn,
+.jeci {
+  width: 20rem;
+  border-radius: 100%;
+  border: 1px solid #000;
+}
+
+.jillian {
+  background-position: center;
+  background-size: cover;
+}
+
+.name,
+.role {
+  color: #999;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.name {
+  margin-top: 1.8rem;
+}
+
+/*********************/
+/* FOOTER */
+/*********************/
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 6.4rem;
+  margin-top: 9.6rem;
+}
+
+.email:link,
+.email:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #444;
+  transition: all 0.4s;
+}
+
+.email:hover,
+.email:active {
+  color: #999;
+}
+
+.footer-heading {
+  color: #888;
+}
+
+.emails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin: 2.4rem 0;
+}
+
+.copyright {
+  text-align: center;
+  color: #555;
+}
+
+/***************************/
+/* TABS SECTION */
+/***************************/
+
+.box-container {
+  height: 35rem;
+  position: relative;
+  padding: 6.4rem;
+  border-radius: 11px;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.1);
+  margin-top: 9.6rem;
+}
+
+.tab-btn {
+  font-size: 2.4rem;
+  background-color: #1e2e36;
+  color: #fff;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 0.8rem 3.2rem;
+  transition: all 0.3s;
+  border: none;
+  border-radius: 7px;
+}
+
+.charact-btn {
+  position: absolute;
+  left: 30rem;
+}
+
+.active {
+  color: #000;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 3px #1e2e36;
+}
+
+.tabs {
+  position: absolute;
+  top: -2rem;
+  right: 83rem;
+}
+
+.tab-btn:hover {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 3px #1e2e36;
+  color: #000;
+  cursor: pointer;
+}
+
+.needs {
+  margin-top: 1.6rem;
+
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  column-gap: 4.4rem;
+  align-items: center;
+}
+
+.characteristics {
+  display: none;
+  grid-template-columns: 25rem 1fr;
+  row-gap: 3.6rem;
+  align-items: center;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 7rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .drop-list {
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  background-color: rgba(255, 255, 255, 0.97);
+}
+
+.sticky .drop-link:hover,
+.sticky .drop-link:active {
+  background: #eee;
+}
+
+.sticky .hero-section {
+  margin-top: 9.6rem;
+}
+
+/**********************/
+/* CONTACT US */
+/**********************/
+
+.cta {
+  display: grid;
+  /* 2/3 = 66.6% + 1/3 = 33.3% */
+  grid-template-columns: 2fr 1fr;
+  border-radius: 11px;
+
+  background: transparent;
+  overflow: hidden;
+
+  margin-bottom: 4.8rem;
+}
+
+.cta-text-box {
+  color: #999;
+}
+
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+}
+
+.cta-form input::placeholder {
+  color: #999;
+}
+
+.btn--form {
+  color: #999;
+  align-self: end;
+  padding: 0.2rem 2.4rem;
+  font-size: 2rem;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.btn--form:hover {
+  color: #555;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+textarea {
+  padding: 0.8rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+}
+
+/*******************************/
+/* PLATFORM SECTION */
+/*******************************/
+
+.section-platform {
+  margin-bottom: 9.6rem;
+}
+
+.platform-text-box {
+  margin-top: 3.2rem;
+}
+
+/*******************************/
+/* PLATFORM SECTION */
+/*******************************/
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+th {
+  color: white;
+  background-color: #518fb5;
+  border: 1px solid #101010;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+/*******************************/
+/* PLATFORM SECTION */
+/*******************************/
